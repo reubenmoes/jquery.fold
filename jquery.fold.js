@@ -1,3 +1,4 @@
+//https://github.com/reubenmoes/jquery.fold
 (function($){
   'use strict';
 
