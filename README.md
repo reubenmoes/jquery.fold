@@ -13,3 +13,19 @@ $('#element').fold();
 ```
 $('#element').fold('restore');
 ```
+
+
+#Example of using with [Harvey](http://harvesthq.github.io/harvey/)
+```
+var $primaryNav = $('.primary-nav'),
+	$mobileNavContainer = $('.mobile-nav-container');
+
+Harvey.attach('screen and (max-width: 767px)', {
+  on: function() {
+    $primaryNav.fold().appendTo($mobileNavContainer);
+  },
+  off: function() {
+    $primaryNav.fold('restore');
+  }
+});
+```
